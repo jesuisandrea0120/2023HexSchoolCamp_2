@@ -64,195 +64,119 @@ body{
     line-height: 1.2;
 }
 /*環境設定終點*/
-h1{
-    color:#000;
-    font-size: 80px;
-    font-weight: 900;
-    padding-top: 160px;
-}
-h2{
-    font-size: 32px;
-    font-weight: 900;
-    margin-bottom: 80px;
-    margin-top: 160px;
-}
-h3{
-    font-size: 48px;
-    font-weight: 900;
-}
-h4{
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 1.5;
-    color:#000;
-    padding-left: 32px;
-    padding-right: 32px;
-    margin-bottom: 12px;
-    margin-top: 20px;
-}
-h5{
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.5;
-    color:#000;
-}
-img{
-    width: 160px;
-    height: 40px;
-}
-p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-}
-.toolcontainer p{
-    color:#000;
-    
-}
-.toolcontainer .searchbar p{
-    color:#919191;
-
-}
-.toolcontainer .detail{
-    font-size: 14px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 20px;
-    border-bottom:1px solid #F2F2F2;
-}
-.toolcontainer .detail2{
-    height: 62px;
-}
-.header{
-    width: 68%;
+.container{
+    max-width: 1296px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #FFF;
 }
-.header .main img{
-    width: 245px;
+.toolcontainer{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.mobilemenu, .mobileview, .mobiledot, .screen-m, .screen-s, .mobile-pickerwrap, .mobile-footer-s{
+    display: none;
+}
+.header, .main-menu{
+    display: flex;
+    align-items: center;
+}
+h1{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.main-menu ul{
-    display: flex;
-    flex-direction:row;
+.header{
+    justify-content: space-between;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 40px;
 }
-.main-menu a{
-    color: #FFF;
+.main-menu li a{
+    display: block;
     text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 700;
     margin-left: 20px;
-}
-.mobilemenu, .mobile-pickerwrap, .mobile-footer-s{
-    display: none;
-}
-.banner{
-    padding-left: 15%;
-    padding-right: 15%;
-    margin: 0 auto;
-    margin-top: 3%;
-    margin-bottom: 8%;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .title{
     font-size: 120px;
     font-weight: 900;
 }
-.CTA{
-    margin-top: 40px;
-    border:1px solid #FFF; 
-    border-radius: 16px;
-    width: 160px;
-}
-.CTA a{
-    color: #FFF;
-    text-decoration: none;
+.banner a {
     display: block;
+    width: 160px;
+    text-decoration: none;
+    color: #FFF;
     text-align: center;
-    /*margin-left: 40px;
-    margin-right: 40px;*/
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.CTA:hover{
-    background: #FFF;
-}
-.CTA a:hover{
-    color: #000;
-    font-weight: bold;
-    background: #FFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    margin-top: 40px;
 }
 .deco{
-    padding-left: 15%;
-    padding-right: 15%;
-    /*margin-bottom: 12%;*/
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
 }
-.deco img{
-    width: 180px;
-    height: 180px;
-    margin-bottom: 160px;
-}
-.servicecontainer{
-    padding-left: 15%;
-    padding-right: 15%;
-    margin: 0 auto;
-}
-.servicedescription{
+.ourservices{
     display: flex;
     justify-content: space-between;
+    margin-top: 160px;
     margin-bottom: 80px;
 }
-.servicedescription h2{
+.ourservices h3{
+    font-size: 32px;
+    font-weight: 900;
     width: 32%;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-right: 24px;
 }
-.servicedescription h3{
+.ourservices h4{
+    font-size: 48px;
+    font-weight: 900;
     width: 66%;
 }
-.servicewrap{
-    max-width: 1296px;
-    margin: 0 auto;
-}
-.servicewrap ul{
+.wrap ul{
     display: flex;
     justify-content: space-between;
+    /*flex-wrap: wrap;*/
 }
-.servicewrap li{
+.web{
     width: 32%;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 40px;
-    padding-right: 40px;
     border-radius: 16px;
     border: 1px solid #FFF;
 }
-.servicecontainer .servicewrap h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.servicewrap svg{
+.service svg{
     width: 80px;
     height: 80px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 40px;
 }
-.epiccontainer{
-    /*max-width:1920px;*/
-    padding-left: 15%;
-    padding-right: 15%;
-    margin: 0 auto;
+.web h6{
+    font-size: 32px;
+    font-weight: 900;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.service p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+}
+.supplierlist h3{
+    font-size: 32px;
+    font-weight: 900;
+    margin-top: 160px;
+    margin-bottom: 80px;
 }
 .webview{
-    margin-bottom: 160px;
-    max-width:1296px;
-    margin: 0 auto;
-}
-.mobileview,.pagedot{
-    display: none;
+    width: 100%;
 }
 .logocut1 img{
     width: 98px;
@@ -266,12 +190,14 @@ p{
 }
 .list1{
     height: 40px;
-    max-width: 1296px;
+    width: 100%;
+    /*max-width: 1296px;*/
     margin: 0 auto;
     position: relative;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
+    overflow: scroll;
 }
 .mask1{
     width: 98px;
@@ -280,9 +206,6 @@ p{
     top: 0px;
     left: 0px;
     background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
-    /*background-color: rgba(0, 0, 0, .6);透明度0.6的黑色半透明遮罩*/
-    /*background-image: linear-gradient(to right, black 100%,black 50%,black 0%);*/
-    /*border: 1px solid #FFF;*/
 }
 .mask2{
     width: 98px;
@@ -291,62 +214,120 @@ p{
     top: 0px;
     right: 0px;
     background: linear-gradient(to left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
-    /*border: 1px solid #FFF;*/
 }
 .list2{
     height: 40px;
-    max-width: 1296px;
-    display: flex;
-    justify-content: space-between;
-}
-.feedback{
-    max-width:1296px;
-    margin: 0 auto;
-}
-.feedback ul{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 160px;
+    overflow: scroll;
     margin-bottom: 160px;
 }
-.card1,.card2,.card3{
-    width: 32%;
-    padding: 40px;
+.feedback{
+    overflow: scroll;
+}
+.screen-l{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    
+}
+.screen-l .web{
+    /*width: 32%;*/
+    width: 416px;
+    padding: 40px;
     background: rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
+    border: none;
 }
 .rankstar{
-    width: 23%;
+    width: 96px;
+    height: 16px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+.comment{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.fullname{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
 }
 .customer{
     margin-top: 20px;
     display: flex;
 }
-.feedback .photo {
+.photo {
     width: 48px;
     height: 48px;
 }
-.comment{
-    margin-top: 20px;
-    font-size: 16px;
-}
 .company{
     font-size: 14px;
+    line-height: 1.5;
 }
 .customerinfo{
     margin-left: 16px;
 }
+/*@media (max-width:1295px) and (min-width:1053px){
+    .feedback{
+        max-width: 1295px;
+    }
+    .screen-l, .screen-s{
+        display: none;
+    }
+    .screen-m{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
+    .screen-m .mobile{
+        width: 100%;
+        margin-left: 3.4%;
+        margin-right: 3.4%;
+        padding: 3.2%;
+        background: rgba(255, 255, 255, 0.08);
+        border: none;
+    }
+}*/
+/*@media (max-width:1052px){
+    .feedback{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .screen-m, .screen-l{
+        display: none;
+    }
+    .mobiledot{
+        display: block;
+    }
+    .screen-s{
+        display: block;
+        width: 100%;
+        margin-left: 3.4%;
+        margin-right: 3.4%;
+        padding: 3.2%;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        border: none;
+    }
+}*/
 .toolcontainer{
-    padding-left: 15%;
-    padding-right: 15%;
-    border-radius:160px;
-    background: #FFF;
+    max-width: 1920px;
+    border-radius: 160px;
+    background-color: #FFF;
+    color:#000;
+    margin-top: 160px;
+}
+.container h5{
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 160px;
 }
 .searchbar{
     display: flex;
@@ -361,6 +342,11 @@ p{
     width: 24px;
     height: 24px;
     margin-right: 12px;
+}
+.searchbar input{
+    background: #F2F2F2;
+    border: none;
+    line-height: 1.5;
 }
 .pickerwrap{
     display: flex;
@@ -378,46 +364,74 @@ p{
     padding-bottom: 20px;
     padding-left: 40px;
 }
+.picker1 p, .picker2 p{
+    line-height: 1.5;
+}
 .button-picker{
     display: flex;
     justify-content: space-between;
+    overflow: scroll;
 }
-.picker1 p, .picker2 p{
-    margin-right: 12px;
-}
-.picker1 svg, .picker2 svg{
-    width: 16px;
-    height: 16px;
-    margin-right: 32px;
-}
-.button-picker p{
+.active, .disactive{
+    line-height: 1.5;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 16px;
     padding-right: 16px;
-}
-.button-picker .active{
-    font-weight: bold;
-    background: #F2F2F2;
+    text-align: center;
     border-radius: 16px;
 }
-.button-picker .disactive{
-    margin-left: 8px;
-}
-.toollist{
-    max-width: 1296px;
-    margin: 0 auto;
+.button-picker .active{
+    font-weight: 700;
+    background-color: #F2F2F2;
 }
 .toollist ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
-.toollist .AIcard{
-    width: 416px;
+.AIcard{
+    width: 32%;
     border-radius: 16px;
     border: 1px solid #F2F2F2;
     margin-bottom: 24px;
+}
+.toollist img{
+    width: 416px;
+    height: 312px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom:1px solid #F2F2F2;
+    margin-bottom: 20px;
+}
+.AIcard h7{
+    font-weight: 900;
+    padding-left: 32px;
+}
+.detail p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #F2F2F2;
+}
+.detail .detail2{
+    padding-bottom: 41px;
+}
+.modeltype h8{
+    font-weight: 700;
+    line-height: 1.5;
+}
+.modeltype p, .hashtagtype p{
+    line-height: 1.5;
+}
+.hashtagtype svg{
+    width: 24px;
+    height: 24px;
 }
 .modeltype, .hashtagtype {
     width: 416px;
@@ -429,222 +443,209 @@ p{
     padding-bottom: 20px;
     border-bottom:1px solid #F2F2F2;
 }
-.toollist img{
-    width: 416px;
-    height: 312px;
-    object-fit: cover;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom:1px solid #F2F2F2;
-}
-.pagepicker {
-    max-width: 82%;
-    height: 48px;
-    margin: 0 auto;
-    /*padding-left: 0%;*/
-    /*padding-left: 76%;*/
-    padding-bottom: 162px;
-    margin-top: 36px;
-}
-.pagepicker ul{
-    width: 308px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    color: #000;
-    text-align: center;
-    margin-left: 76%;
-}
-.pagepicker p{
+.number{
+    font-size: 14px;
+    line-height: 1.5;
     font-weight: 700;
     width: 48px;
     height: 48px;
     border-radius: 16px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-left: 4px;
+}
+.browsing-number{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 700;
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #FFF;
+    margin-left: 4px;
+}
+.page svg{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+}
+.pagepicker{
+    display: flex;
+    justify-content:flex-end;
+    padding-bottom: 162px;
+}
+.page{
+    display: flex;
     align-items: center;
 }
-.pagepicker .browsing-number{
-    color: #FFF;
-    background: #000;
-}
-.pagepicker .number{
-    margin-left: 8px;
-}
-.pitchcontainer{
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 15%;
-    padding-right: 15%;
-    margin: 0 auto;
+.pitch{
     text-align: center;
+    margin-bottom: 160px;
 }
-.pitchcontainer h3{
+.pitch h3{
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
     margin-top: 160px;
     margin-bottom: 40px;
 }
-.pitchcontainer .CTA{
-    margin: 0 auto;
+.pitch a{
+    width: 188px;
+    text-decoration: none;
+    color: #FFF;
     text-align: center;
-    display: flex;
-    align-items: center;
-    padding-left: 40px;
-    border:1px solid #FFF;
-    margin-bottom: 80px;
-}
-.pitchcontainer .CTA a{
-    color: #FFF;
-    text-decoration: none;
-    display: block;
-    margin-right: 16px;
-}
-.CTA:hover{
-    background: #FFF;
-}
-.CTA a:hover{
-    color: #000;
-    font-weight: bold;
-    background: #FFF;
-}
-.footer{
-    padding-left: 15%;
-    padding-right: 15%;
-}
-.footer-l ul{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    border-top: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-}
-.footer-title a{
-    display: block;
-    color: #FFF;
-    font-size: 80px;
-    font-weight: 900;
-    line-height: 1.2;
-    text-decoration: none;
-}
-.footer-title .style1 {
-    margin-bottom: 8px;
-}
-.footer-s{
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #FFF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.pitch .CTA{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.footer-l{
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title a{
+    font-size: 80px;
+    font-weight: 900;
+    display: block;
+    /*width: 160px;*/
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+}
+.footer-title .style1{
+    margin-top: 80px;
+    margin-bottom: 8px;
+}
+.logo{
+    margin-top: 80px;
+    margin-bottom: 240px;
+}
+.left, .back-to-top{
+    display: flex;
+    align-items: center;
+}
+.left a, .back-to-top a{
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.footer-s{
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
 }
-.left, .button{
-    padding-top: 12px;
-    padding-bottom: 12px;
-    display: flex;
-    align-items: center;
-}
-.footer-s .button a{
-    display: block;
-    color: #FFF;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
-    text-align: center;
-}
 .left p{
-    font-size: 16px;
+    margin-right: 100px;
     font-weight: 700;
     line-height: 1.5;
-    text-align: center;
-    margin-right: 20px;
 }
-@media(max-width:768px) and (min-width:376px){ 
-    .header{
-        width: 93.6%;
-    }
-    .banner, .deco, .servicecontainer, .epiccontainer{
-        padding-left: 3.2%;
-        padding-right: 3.2%;
-    }
-    h2{
-        font-size: 20px;
-        font-weight: 900;
-        margin-top: 120px;
-        margin-bottom: 6.4%;
-        margin-left: 0px;
-        /*margin-right: 12px;*/
-    }
-    .servicedescription h2{
-        width: 100%;
-    }
-    .servicedescription h3{
-        font-size: 32px;
-        width: 100%;
-    }
-    .servicewrap{
-        max-width:768px;
-    }
-    .servicewrap ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .servicewrap li{
-        width: 100%;
-        margin-bottom: 12px;
-    }
-    .servicecontainer .servicewrap h2{
-        font-size: 32px;
-    }
-    .webview, .main-menu ul, .pickerwrap, .footer-s{
+.left a{
+    margin-left: 20px;
+}
+@media (max-width:768px) and (min-width:375px){
+    .footer-s, .pickerwrap, .screen-l, .webview, .main-menu{
         display: none;
     }
-    .mobileview, .pagedot, .mobilemenu, .mobile-pickerwrap, .mobile-footer-s{
+    .mobilemenu, .mobileview, .mobiledot, .mobile-pickerwrap, .screen-m, .mobile-footer-s{
         display: block;
     }
-    .header .main img{
-        width: 147px;
+    .container{
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .toolcontainer{
+        max-width: 768px;
+        margin: 0 auto;
+        border-radius: 20px;
+        margin-top: 120px;
+    }
+    h1{
         margin-top: 28px;
         margin-bottom: 28px;
     }
+    .mobilemenu{
+        display: flex;
+        align-items: center;
+    }
     .mobilemenu svg{
-        width: 40px;
-        height: 40px;
-        margin-left: 164px;
+        width: 24px;
+        height: 24px;
+    }
+    .header{
+        width: 94%;
+        margin-bottom: 40px;
+    }
+    .banner{
+        width: 94%;
+        margin-bottom: 180px;
     }
     .title{
         font-size: 48px;
     }
-    .deco{
-        margin-top: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0px;
-        padding-right: 0px;
-        max-width: 768px;
-    }
     .deco img{
-        width: 30%;
-        height: 30%;
-        margin-bottom: 120px;
+        width: 33%;
     }
-    .servicedescription{
+    .ourservices{
+        width: 94%;
         display: flex;
         flex-direction: column;
+        margin-top: 120px;
+        margin-bottom: 48px;
     }
-    .servicedescription h2{
+    .ourservices h3{
+        font-size: 20px;
+        width: 100%;
+        margin-right: 0px;
         margin-bottom: 24px;
     }
-    .pagedot{
-        margin-top: 24px;
-        text-align: center;
-        margin-bottom: 120px;
+    .ourservices h4{
+        font-size: 32px;
+        width: 100%;
+    }
+    .wrap{
+        width: 94%;
+    }
+    .wrap ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .web{
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .supplierlist{
+        width: 94%;
+    }
+    .supplierlist h3{
+        font-size: 20px;
+        margin-top: 108px;
+        margin-bottom: 24px;
     }
     .mobileview{
-        max-width: 768px;
-        margin: 0 auto;
+        width: 100%;
     }
     .list3{
         height: 40px;
@@ -653,450 +654,189 @@ p{
         margin-bottom: 12px;
         display: flex;
         justify-content: space-between;
-    }
-    .mask3{
-        width: 83px;
-        height: 40px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        background:linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
-    }
-    .logocut3{
-        width: 80px;
-        height: 40px;
-        object-fit: cover;
-    }
-    .logocut4{
-        width: 83px;
-        /*height: 40px;
-        object-fit: cover;*/
-    }
-    .logocut4 img{
-        width: 83px;
-        height: 40px;
-        object-fit: cover;
-    }
-    .list4{
-        padding-left: 8.5%;
-        position: relative;
-    }
-    .mask4{
-        width: 83px;
-        height: 40px;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        background: linear-gradient(to left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
-    }
-    /*.list3{
-        width: 100%;
-        height: 40px;
-        margin: 0 auto;
-        position: relative;
-    }
-    .list3{
-        margin-bottom: 12px;
-    }
-    .img{
-        margin-left: 25%;
-        margin-right: 30%;
-    }
-    .sticklogo2{
-        
-        position: absolute;
-        top: 0px;
-        left: 78%;
-    }
-    .sticklogo2 img{
-        position: absolute;
-        clip: rect(40px 160px 0px 78px);
-        width: 82px;
-        top: 0px;
-        left: 78%;
-    }
-    .list4{
-        width: 100%;
-        height: 40px;
-        margin: 0 auto;
-        padding-left: 8.5%;
-        padding-right: 0.8%;
-    }*/
-    .feedback ul{
-        max-width: 768px;
-        margin: 0 auto;
-        margin-top: 12.8%;
-        margin-bottom: 0px;
-    }
-    .card2, .card3{
-        display: none;
-    }
-    .card1{
-        width: 100%;
-        margin-left: 3.4%;
-        margin-right: 3.4%;
-        padding: 3.2%;
-        height: auto;
-    }
-    .toolcontainer {
-        padding-left: 3.2%;
-        padding-right: 3.2%;
-        border-radius: 20px;
-    }
-    .picker{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-    .mobile-pickerwrap{
-        margin-bottom: 48px;
-    }
-    .toollist{
-        max-width: 100%;
-    }
-    .toollist ul{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-    .toollist .AIcard{
-        width: 100%;
-        border-radius: 16px;
-        border: 1px solid #F2F2F2;
-        margin-bottom: 12px;
-    }
-    .toollist img{
-        width: 100%;
-        height: 312px;
-        object-fit: cover;
-        border-top-left-radius: 16px;
-        border-top-right-radius: 16px;
-        border-bottom:1px solid #F2F2F2;
-    }
-    .modeltype, .hashtagtype {
-        width: 100%;
-    }
-    .pagepicker {
-        max-width: 82%;
-        height: 48px;
-        margin: 0 auto;
-        padding-left: 0%;
-        padding-bottom: 80px;
-        margin-top: 20px;
-    }
-    .pagepicker ul{
-        margin-left: 50%;
-    }
-    .pagepicker .number{
-        margin-left: 4px;
-    }
-    .pagepicker .browsing-number{
-        color: #FFF;
-        background: #000;
-    }
-    .pitchcontainer, .footer{
-        padding-left: 3.2%;
-        padding-right: 3.2%;
-    }
-    .footer-l ul{
-        flex-direction: column-reverse;
-    }
-    .footer-title{
-        margin-top: 40px;
-    }
-    .top p, .bottom p{
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.5;
-        text-align: center;
-        margin-right: 20px;
-    }
-    .button a{
-        display: block;
-        color: #FFF;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.5;
-        text-align: center;
-    }
-    .top{
-        display: flex;
-        justify-content: space-between;
-    }
-    .bottom{
-        display: flex;
-    }
-}
-@media(max-width:375px){ 
-    .header{
-        width: 93.6%;
-    }
-    .banner, .deco, .servicecontainer, .epiccontainer{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    h2{
-        font-size: 20px;
-        font-weight: 900;
-        margin-top: 120px;
-        margin-bottom: 24px;
-        margin-left: 0px;
-        /*margin-right: 12px;*/
-    }
-    .servicedescription h2{
-        width: 100%;
-    }
-    .servicedescription h3{
-        font-size: 32px;
-        width: 100%;
-    }
-    .servicewrap{
-        max-width:375px;
-    }
-    .servicewrap ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .servicewrap li{
-        width: 100%;
-        margin-bottom: 12px;
-    }
-    .servicecontainer .servicewrap h2{
-        font-size: 32px;
-    }
-    .webview, .main-menu ul, .pickerwrap, .footer-s{
-        display: none;
-    }
-    .mobileview, .pagedot, .mobilemenu, .mobile-pickerwrap, .mobile-footer-s{
-        display: block;
-    }
-    .mobileview, .pagedot, .mobilemenu, .mobile-pickerwrap, .mobile-footer-s{
-        max-width: 100%;
-    }
-    .header .main img{
-        width: 147px;
-        margin-top: 28px;
-        margin-bottom: 28px;
-    }
-    .mobilemenu svg{
-        width: 40px;
-        height: 40px;
-        margin-left: 164px;
-    }
-    .title{
-        font-size: 48px;
-    }
-    .deco{
-        margin-top: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0px;
-        padding-right: 0px;
-        max-width: 768px;
-    }
-    .deco img{
-        width: 30%;
-        height: 30%;
-        margin-bottom: 120px;
-    }
-    .servicedescription{
-        display: flex;
-        flex-direction: column;
-    }
-    .servicedescription h2{
-        margin-bottom: 24px;
-    }
-    .pagedot{
-        margin-top: 24px;
-        text-align: center;
-        margin-bottom: 120px;
-    }
-    .list3{
-        height: 40px;
-        margin: 0 auto;
-        position: relative;
-        margin-bottom: 12px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .mask3{
-        width: 83px;
-        height: 40px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        background:linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
-    }
-    .logocut3{
-        width: 80px;
-        height: 40px;
-        object-fit: cover;
-    }
-    .logocut4{
-        width: 83px;
-        /*height: 40px;
-        object-fit: cover;*/
-    }
-    .logocut4 img{
-        width: 83px;
-        height: 40px;
-        object-fit: cover;
-    }
-    .list4{
-        padding-left: 8.5%;
-        position: relative;
-    }
-    .mask4{
-        width: 83px;
-        height: 40px;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        background: linear-gradient(to left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
-    }
-    /*.list3, .list4{
-        max-width: 100%;
-        height: 40px;
-        margin: 0 auto;
-        position: relative;
-    }
-    .list3{
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 12px;
-    }
-    .sticklogo2{
-        position: absolute;
-        top: 0px;
-        left: 78%;
-    }
-    .sticklogo2 img{
-        position: absolute;
-        clip: rect(40px 160px 0px 78px);
-        width: 82px;
-        top: 0px;
-        left: 78%;
-    }
-    .list4{
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-    }*/
-    .feedback ul{
-        max-width: 351px;
-        margin: 0 auto;
-        margin-top: 12.8%;
-        margin-bottom: 0px;
-    }
-    .card2, .card3{
-        display: none;
-    }
-    .card1{
-        /*max-width: 351px;
-        padding: 20px;*/
-        width: 351px;
-        margin-left: 3.4%;
-        margin-right: 3.4%;
-        padding: 3.2%;
-        height: auto;
-    }
-    .toolcontainer {
-        padding-left: 3.2%;
-        padding-right: 3.2%;
-        border-radius: 20px;
-    }
-    .picker{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 16px;
-        margin-bottom: 16px;
-    }
-    .button-picker{
-        max-width: 375px;
         overflow: scroll;
     }
-    .mobile-pickerwrap{
+    .mask3{
+        width: 83px;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background:linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
+    }
+    .logocut3{
+        width: 80px;
+        height: 40px;
+        object-fit: cover;
+    }
+    .logocut4{
+        width: 83px;
+    }
+    .logocut4 img{
+        width: 83px;
+        height: 40px;
+        object-fit: cover;
+    }
+    .list4{
+        padding-left: 8.5%;
+        display: flex;
+        height: 40px;
+        position: relative;
         margin-bottom: 48px;
     }
-    .toollist{
-        max-width: 100%;
+    .mask4{
+        width: 83px;
+        height: 40px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background: linear-gradient(to left, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
     }
-    .toollist ul{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
+    .feedback{
+        width: 94%;
     }
-    .toollist .AIcard{
+    .screen-m{
         width: 100%;
+        padding: 3.2%;
+        height: auto;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.08);
+    }
+    .mobiledot{
+        text-align: center;
+    }
+    .container{
+        width: 94%;
+    }
+    .container h5{
+        font-size: 32px;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .searchbar{
+        margin-top: 32px;
+    }
+    .picker{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 40px;
+    }
+    .picker1, .picker2 {
+        display: flex;
+        align-items: center;
         border-radius: 16px;
         border: 1px solid #F2F2F2;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 32px;
+    }
+    .picker1 p, .picker2 p{
+        line-height: 1.5;
+    }
+    .button-picker{
+        display: flex;
+        justify-content: space-between;
+        overflow: scroll;
+    }
+    .active, .disactive{
+        line-height: 1.5;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        text-align: center;
+        border-radius: 16px;
+    }
+    .button-picker .active{
+        font-weight: 700;
+        background-color: #F2F2F2;
+    }
+    .toollist ul{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .AIcard{
+        width: 100%;
         margin-bottom: 12px;
+        border: none;
+        border-top: 1px solid #F2F2F2;
+        border-left: 1px solid #F2F2F2;
+        border-right: 1px solid #F2F2F2;
     }
     .toollist img{
         width: 100%;
         height: 312px;
-        object-fit: cover;
-        border-top-left-radius: 16px;
-        border-top-right-radius: 16px;
-        border-bottom:1px solid #F2F2F2;
     }
-    .modeltype, .hashtagtype {
+    .AIcard h7{
+        font-size: 20px;
+    }
+    .detail .detail2{
+        padding-bottom: 41px;
+    }
+    .modeltype, .hashtagtype{
         width: 100%;
     }
-    .pagepicker {
-        max-width: 82%;
-        height: 48px;
-        margin: 0 auto;
-        padding-left: 0%;
-        padding-bottom: 80px;
-        margin-top: 20px;
+    .hashtagtype{
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-bottom:1px solid #F2F2F2;
     }
-    .pagepicker ul{
-        margin-left: 3.2%;
+    .pitch{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 160px;
     }
-    .pagepicker .number{
-        margin-left: 4px;
+    .pitch h3{
+        margin-top: 148px;
+        margin-bottom: 32px;
+        width: 40%;
+        text-align: center;
     }
-    .pagepicker .browsing-number{
-        color: #FFF;
-        background: #000;
-    }
-    .pitchcontainer, .footer{
-        padding-left: 3.2%;
-        padding-right: 3.2%;
-    }
-    .footer-l ul{
+    .footer-l{
         flex-direction: column-reverse;
+        align-items: flex-start;
     }
     .footer-title{
-        margin-top: 40px;
+        margin-bottom: 80px;
     }
-    .top p, .bottom p{
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 1.5;
-        text-align: center;
-        margin-right: 20px;
+    .footer-title a{
+        font-size: 48px;
     }
-    .button a{
-        display: block;
+    .footer-title .style1{
+        margin-top: 0px;
+    }
+    .logo{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    .bottom a, .back-to-top{
         color: #FFF;
-        text-decoration: none;
-        font-size: 16px;
         font-weight: 700;
         line-height: 1.5;
-        text-align: center;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
     }
     .top{
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
     .bottom{
         display: flex;
+    }
+    .mobile-footer-s{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin: 0 auto;
+    }
+    .bottom a{
+        margin-right: 20px;
+        margin-top: 36px;
+        margin-bottom: 32px;
     }
 }
